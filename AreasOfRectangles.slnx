@@ -1,7 +1,54 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="AreasOfRectangles/AreasOfRectangles.vcxproj" />
-</Solution>
+/* 
+	disp "Enter width and length of A: "
+	input wA , lA
+	disp "Enter width and length of B: "
+	input wB , lB
+
+	declare real A
+	set A = wA * lA
+
+	declare real B
+	set A = wB * lB
+
+	If (A > B) then 
+		display "A > B"
+	else
+	If (A < B) then
+		display "A > B" 
+	else
+		display "A = B" 
+	End if
+   
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	double wA, lA;
+	cout << "Enter width and length of A: ";
+	cin >> wA >> lA;
+
+	double wB, lB;
+	cout << "Enter width and length of B: ";
+	cin >> wB >> lB;
+
+	double A = wA * lA;
+	double B = wB * lB;
+
+
+	if (A > B)
+	{
+		cout << "A > B\n";
+	}
+	else 
+	if (A < B)
+	{
+		cout << "A < B\n";
+	}
+	else
+	{
+		cout << "A = B\n";
+	}
+
+}
